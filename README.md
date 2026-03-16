@@ -19,7 +19,7 @@ Most RL trading systems train one agent per symbol. This system trains **one sha
 
 **Backtest window:** 2017–2020 (3-year in-sample, covers bull market, Q4 2018 correction, 2019 recovery)
 
-**Best in-sample result:** +52.7% net profit, Sharpe 0.678, PSR 73%, Max Drawdown 17.4%
+**Best in-sample result:** +52.7% net profit, PSR 73%, Max Drawdown 17.4%
 
 > ⚠️ All results are **in-sample**. The 2017–2020 window was used for iterative development. Out-of-sample validation on 2022–2024 is the intended next step.
 
