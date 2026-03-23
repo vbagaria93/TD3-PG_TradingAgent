@@ -13,13 +13,14 @@ class LiquidValueUniverseSelectionModel(FundamentalUniverseSelectionModel):
       • $10M+ daily dollar volume
     """
 
-    MAX_SYMBOLS = 3    # kept at 3 — 5 symbols caused LEAN 10-min timeout
+    MAX_SYMBOLS = 2    # reduced from 3 — concentrate on top 2 highest-conviction picks.
+                       # 3rd pick consistently diluted alpha. Proven best in Alert run.
     MIN_PRICE = 5.0
-    MAX_PRICE = 500.0  # increased from 200 — allows high-beta names like SHOP, NVDA
+    MAX_PRICE = 500.0
     COARSE_COUNT = 200
     RSI_MAX = 65     # exclude overbought
-    RSI_MIN = 50     # exclude oversold / no momentum
-    MOM_MIN = 0.10   # raised from 0.05 — prefer stronger trending names
+    RSI_MIN = 55     # raised from 50 — requires confirmed momentum, not just non-oversold
+    MOM_MIN = 0.15   # raised from 0.10 — filters low-beta drift names without over-restricting
     MOM_MAX = 0.80   # cap at 80% — above this likely exhausted squeeze
     RSI_PERIOD = 14
 
